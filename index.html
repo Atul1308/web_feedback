@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .form-group textarea {
+            resize: vertical;
+        }
+        .form-group input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Event Feedback Form</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="schedule-rating">1. How would you rate the event schedule and timing?</label>
+            <select id="schedule-rating" name="schedule-rating" required>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="quality-rating">2. How would you rate the quality of the work/sessions?</label>
+            <select id="quality-rating" name="quality-rating" required>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="impact-rating">3. How would you rate the event's impact on your organization?</label>
+            <select id="impact-rating" name="impact-rating" required>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="overall-rating">4. How would you rate the overall experience?</label>
+            <select id="overall-rating" name="overall-rating" required>
+                <option value="1">1 - Very Poor</option>
+                <option value="2">2 - Poor</option>
+                <option value="3">3 - Average</option>
+                <option value="4">4 - Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="like-most">5. What did you like most about the session?</label>
+            <textarea id="like-most" name="like-most" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="dislike">6. What did you dislike about the session?</label>
+            <textarea id="dislike" name="dislike" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="suggestions">7. Any suggestions?</label>
+            <textarea id="suggestions" name="suggestions" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="future-work">8. Which would you like to work in future?</label>
+            <textarea id="future-work" name="future-work" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit Feedback">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
